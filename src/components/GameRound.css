@@ -1,0 +1,20 @@
+.game-round {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-round .players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-round .players .player-portrait {
+    margin-bottom: 30px;
+}
+
+.game-round .drawings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

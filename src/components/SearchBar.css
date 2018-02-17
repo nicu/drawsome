@@ -1,0 +1,35 @@
+.search-bar {
+    position: relative;
+}
+
+.search-bar button {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 25px;
+    border: 0;
+    height: 50px;
+    background-color: #F44336;
+    box-shadow: 1px 2px 9px 0 rgba(0,0,0,0.2);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 60px;
+    font-size: 0.71em;
+}
+
+.search-bar input {
+    margin: 10px 20px 10px 20px;
+    width: calc(100% - 40px);
+    height: 60px;
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    .search-bar input {
+        font-size: 2em;
+    }
+    .search-bar button {
+        width: 100px;
+        font-size: 1em;
+    }
+}

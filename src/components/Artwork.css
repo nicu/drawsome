@@ -1,0 +1,159 @@
+.artwork {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: stretch;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.artwork .drawing {
+    order: -1;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.artwork .drawing svg{
+    min-width: 250px;
+    max-width: 100%;
+    background-color: white;
+}
+
+.artwork .drawing .title, .artwork .drawing .metadata {
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+
+.artwork .lies ul{
+    margin: 0;
+    list-style: none;
+    padding: 0 30px;
+}
+.artwork .lies:first-child ul{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 0;
+
+}
+.artwork .lies:last-child ul{
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+
+}
+.artwork .lies ul li{
+    margin-bottom: 10px;
+}
+
+.artwork .drawing .title, .artwork .lies .lie-text {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.artwork .drawing .metadata, .artwork .lies .lie-metadata {
+    font-style: italic;
+    font-size: 1em
+}
+
+@media (max-width: 476px) {
+    .artwork .drawing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .artwork .drawing svg{
+        align-self: center;
+    }
+    .artwork .drawing .title, .artwork .drawing .metadata {
+        font-size: 1.4em;
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .artwork .drawing {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (min-width: 769px) {
+    .artwork {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-items: stretch;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .artwork .drawing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        height: 100%;
+        order:1;
+        padding-top: 0;
+    }
+
+    .artwork .drawing svg{
+        display: flex;
+        padding: 30px 90px;
+        box-shadow: rgba(0,0,0,0.4) 3px 3px 10px;
+        margin-bottom: 30px;
+        height: 330px;
+    }
+
+    .artwork .lies {
+        display: flex;
+        align-items: stretch;
+        margin: 0;
+        width: 25%;
+        order:1;
+    }
+
+    .artwork .lies ul {
+        list-style: none;
+        padding: 0;
+        margin: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .artwork .lies ul li{
+        margin-bottom: 20px;
+    }
+
+    .artwork .drawing .title, .artwork .lies .lie-text {
+        font-weight: 900;
+        font-size: 1.4em;
+    }
+
+    .artwork .drawing .metadata, .artwork .lies .lie-metadata {
+        font-style: italic;
+        font-size: 1em
+    }
+}
+
+@media (min-width: 1025px) {
+    .artwork .drawing .title, .artwork .lies .lie-text {
+        font-weight: 900;
+        font-size: 1.6em;
+    }
+
+    .artwork .drawing .metadata, .artwork .lies .lie-metadata {
+        font-style: italic;
+        font-size: 1.2em
+    }
+}

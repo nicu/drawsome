@@ -1,0 +1,18 @@
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.search-results h2 {
+    flex: 1 100%;
+}
+
+.search-results .group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-results .group h3 {
+    flex: 1 100%;
+}

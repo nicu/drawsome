@@ -1,0 +1,74 @@
+.game-thumbnail {
+    box-sizing: border-box;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.game-thumbnail header {
+    background-color: #2196F3;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+.game-thumbnail .players {
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game-thumbnail .players .title {
+    font-weight: 500;
+    flex: 1 100%;
+    padding-bottom: 7px;
+}
+
+.game-thumbnail .players>span:not(.title){
+    display: block;
+    min-width: 115px;
+    max-width: 225px;
+    padding-bottom: 5px;
+}
+
+.game-thumbnail .matching-keywords {
+    padding: 10px 15px;
+}
+.game-thumbnail .matching-keywords>span:first-child {
+    padding-top: 7px;
+}
+.game-thumbnail .matching-keywords>span{
+    display: block;
+    padding-left: 7px;
+}
+.game-thumbnail .highlight {
+    color: red;
+}
+.game-thumbnail .actions {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 15px 10px;
+}
+.game-thumbnail .actions a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 900;
+    margin-right: 20px;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .game-thumbnail {
+        min-width: 230px;
+        width: 30%;
+        max-width: 350px;
+    }
+    .game-thumbnail .actions a:hover {
+        box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.5);
+    }
+}

@@ -1,0 +1,54 @@
+input {
+    margin: 30px 5vw;
+    width: 90vw;
+    height: 60px;
+    font-size: 2em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a, a:link, a:visited, a:hover, a:target {
+    color: #333333;
+    text-decoration: none;
+}
+.suggestion {
+    margin: 0 5vw;
+    width: 90vw;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.suggestion:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.suggestion-header {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    input {
+        margin-top: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 90vw;
+        height: 60px;
+        font-size: 1em;
+    }
+    .suggestion {
+        margin: 0;
+        width: 90vw;
+        padding: 20px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}
