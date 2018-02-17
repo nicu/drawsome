@@ -1,5 +1,6 @@
 {
   "name": "drawesome",
+  "homepage": "http://nicu.github.io/drawsome",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
