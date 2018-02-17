@@ -6,7 +6,7 @@ import SearchResults from './components/SearchResults';
 import SearchBar from './components/SearchBar';
 import './App.css';
 
-const baseUrl = '';
+const baseUrl = '/drawsome';
 
 const GameRoundPage = ({ match }) => (
   <GameRoundLoader apiUrl={baseUrl + '/games/'} gameId={match.params.id} />
