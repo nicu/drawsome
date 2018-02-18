@@ -23,20 +23,23 @@ const groupGames = games => {
   });
 };
 
-const SearchResults = ({ query, games }) => (
-  <div className="search-results">
-    <h2>Search Results for {query}</h2>
-    {groupGames(filterGames(query, games)).map(({ date, games }) => {
-      return (
-        <div className="group" key={date}>
-          <h3>Games on {new Date(date).toLocaleDateString()}</h3>
-          {games.map(game => (
-            <GameThumbnail key={game.id} query={query} {...game} />
-          ))}
-        </div>
-      );
-    })}
-  </div>
-);
+const SearchResults = ({ query, games }) => {
+  let q = query.toLowerCase();
+  return (
+    <div className="search-results">
+      <h2>Search Results for {query}</h2>
+      {groupGames(filterGames(q, games)).map(({ date, games }) => {
+        return (
+          <div className="group" key={date}>
+            <h3>Games on {new Date(date).toLocaleDateString()}</h3>
+            {games.map(game => (
+              <GameThumbnail key={game.id} query={q} {...game} />
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default SearchResults;
